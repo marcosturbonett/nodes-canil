@@ -1,0 +1,45 @@
+MANUAL YARN:
+https://classic.yarnpkg.com/lang/en/docs/cli/add/
+
+1 - entrar no https://github.com/new
+    	* cria um novo projeto
+	* add README file
+	* add .gitignore para NODE.
+
+2 - emtrar no prompt de comando no diretorio onde prentende conectar ao projeto
+	* git clone URL_DO_PROJETO
+
+
+abrir o diretorio no code .
+
+3-  instalar as dependencias:
+
+yarn init // cria o projeto inicial
+
+tsc --init // cria o arquivo de configuração do typscript
+ - ENTRAR no arquivo e colocar: 
+   "target": "es6"
+    "outFile": "./dist",           
+    "outDir": "./src",   
+    "moduleResolution": "node",   
+
+ "scripts": {
+    "start-dev": "nodemon -e ts,json,mustache src/server/ts"
+  },
+
+DEPENDENCIAS:
+GLOBAIS.
+#nodemon
+#typescript
+#ts-node
+yarn global add  nodemon typescript ts-node
+
+DEPENDECIAS PROJETO
+yarn add express mustache-express dotenv
+
+DEPEMDEMCOAS DE DESEMVOLVIMENTO:
+yarn add --dev @types/express @types/mustache-express @types/node
+
+4 -  CRIAR NOSSOS DIRETORIOS
+src/ 
+	- server.ts
